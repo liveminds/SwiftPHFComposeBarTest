@@ -14,6 +14,7 @@
 		1ACB04851B4A880000BA565A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ACB04831B4A880000BA565A /* LaunchScreen.storyboard */; };
 		1ACB04901B4A880000BA565A /* SwiftPHFComposeBarTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACB048F1B4A880000BA565A /* SwiftPHFComposeBarTestTests.swift */; };
 		1ACB049B1B4A880000BA565A /* SwiftPHFComposeBarTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACB049A1B4A880000BA565A /* SwiftPHFComposeBarTestUITests.swift */; };
+		1ACB04A91B4A897200BA565A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1ACB04A81B4A897200BA565A /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1ACB04961B4A880000BA565A /* SwiftPHFComposeBarTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPHFComposeBarTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ACB049A1B4A880000BA565A /* SwiftPHFComposeBarTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPHFComposeBarTestUITests.swift; sourceTree = "<group>"; };
 		1ACB049C1B4A880100BA565A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ACB04A81B4A897200BA565A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		1ACB046E1B4A880000BA565A = {
 			isa = PBXGroup;
 			children = (
+				1ACB04A81B4A897200BA565A /* .gitignore */,
 				1ACB04791B4A880000BA565A /* SwiftPHFComposeBarTest */,
 				1ACB048E1B4A880000BA565A /* SwiftPHFComposeBarTestTests */,
 				1ACB04991B4A880000BA565A /* SwiftPHFComposeBarTestUITests */,
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ACB04A91B4A897200BA565A /* .gitignore in Resources */,
 				1ACB04851B4A880000BA565A /* LaunchScreen.storyboard in Resources */,
 				1ACB04821B4A880000BA565A /* Assets.xcassets in Resources */,
 				1ACB04801B4A880000BA565A /* Main.storyboard in Resources */,
