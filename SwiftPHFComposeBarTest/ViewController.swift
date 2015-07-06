@@ -7,12 +7,29 @@
 //
 
 import UIKit
+import PHFComposeBarView
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PHFComposeBarViewDelegate {
+
+    var composeBar: PHFComposeBarView {
+        let viewBounds = self.view.bounds
+        let frame = CGRectMake(0.0, viewBounds.size.height - PHFComposeBarViewInitialHeight, viewBounds.size.width, PHFComposeBarViewInitialHeight)
+        let composeBarView = PHFComposeBarView(frame: frame)
+        return composeBarView
+    }
+
+    override var inputAccessoryView: UIView {
+        return self.composeBar
+    }
+
+    override func canBecomeFirstResponder() -> Bool {
+        return true
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.composeBar.delegate = self;
+        self.composeBar.removeFromSuperview()
     }
 
     override func didReceiveMemoryWarning() {
