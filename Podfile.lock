@@ -1,0 +1,13 @@
+PODS:
+  - PHFComposeBarView (2.0.1):
+    - PHFDelegateChain (~> 1.0)
+  - PHFDelegateChain (1.0.1)
+
+DEPENDENCIES:
+  - PHFComposeBarView (~> 2.0)
+
+SPEC CHECKSUMS:
+  PHFComposeBarView: ceb26dd5a1e9a262c9e0ec3fd1dc12dbfff41c75
+  PHFDelegateChain: 491f9cd8a3fb8761f390ff05f74a0e168d48d285
+
+COCOAPODS: 0.37.1
