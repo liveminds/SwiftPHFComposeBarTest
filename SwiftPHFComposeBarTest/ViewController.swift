@@ -23,5 +23,13 @@ class ViewController: UIViewController, PHFComposeBarViewDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-}
+    override func canBecomeFirstResponder() -> Bool {
+        return true
+    }
 
+    override var inputAccessoryView: UIView {
+        composeBarView.removeFromSuperview()
+        return composeBarView
+    }
+
+}
