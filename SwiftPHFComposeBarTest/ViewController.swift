@@ -15,6 +15,7 @@ class ViewController: UIViewController, PHFComposeBarViewDelegate {
         let viewBounds = self.view.bounds
         let frame = CGRectMake(0.0, viewBounds.size.height - PHFComposeBarViewInitialHeight, viewBounds.size.width, PHFComposeBarViewInitialHeight)
         let composeBarView = PHFComposeBarView(frame: frame)
+        composeBarView.delegate = self
         return composeBarView
     }
 
@@ -26,19 +27,16 @@ class ViewController: UIViewController, PHFComposeBarViewDelegate {
         return true
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.composeBar.delegate = self;
-        self.composeBar.removeFromSuperview()
-    }
-
     override func viewDidAppear(animated: Bool) {
-        self.composeBar.becomeFirstResponder()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        print("viewDidAppear self \(self)")
+        print("composeBar.delegate \(self.composeBar.delegate)")
+        print("composeBar.textView.delegate \(self.composeBar.textView.delegate)")
+        print("composeBar.canBecomeFirstResponder() \(self.composeBar.canBecomeFirstResponder())")
+        print("composeBar.textView.canBecomeFirstResponder() \(self.composeBar.textView.canBecomeFirstResponder())")
+        let res = self.composeBar.becomeFirstResponder()
+        print("composeBar.becomeFirstResponder() \(res)")
+        print("composeBar.isFirstResponder() \(self.composeBar.isFirstResponder())")
+        print("composeBar.textView.isFirstResponder() \(self.composeBar.textView.isFirstResponder())")
     }
 
 
