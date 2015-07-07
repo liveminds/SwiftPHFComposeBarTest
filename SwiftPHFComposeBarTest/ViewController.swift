@@ -9,13 +9,13 @@
 import UIKit
 import PHFComposeBarView
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PHFComposeBarViewDelegate {
 
     @IBOutlet weak var composeBarView: PHFComposeBarView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        composeBarView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
